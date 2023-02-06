@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import ThemeSwitcher from './theme-switch'
 
 const name = 'Áron Gida'
 export const siteTitle = 'Áron Gida'
@@ -29,7 +30,8 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="">
+      <ThemeSwitcher></ThemeSwitcher>
+      <header>
         {home ? (
           <>
             <Image
