@@ -21,11 +21,7 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className="text-xl">
-        <p className="text-small">Automating my front to self!</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <p className="text-small m-5">Automating my front to self!</p>
       </section>
       <section>
         <h2>Blog</h2>

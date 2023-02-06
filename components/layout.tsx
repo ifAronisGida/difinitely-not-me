@@ -29,7 +29,7 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header>
+      <header className="">
         {home ? (
           <>
             <Image
@@ -40,7 +40,7 @@ export default function Layout({
               width={200}
               alt={name}
             />
-            <h1 className="text-3xl text-center">{name}</h1>
+            <h1 className="text-3xl text-center p-5 m-5">{name}</h1>
           </>
         ) : (
           <>
@@ -64,7 +64,7 @@ export default function Layout({
       <main>{children}</main>
       {!home && (
         <div>
-          <Link href="/">← Back to home</Link>
+          <Link href="/" className="underline">← Back to home</Link>
         </div>
       )}
     </div>
