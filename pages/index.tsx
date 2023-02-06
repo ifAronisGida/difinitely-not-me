@@ -21,7 +21,7 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className="text-xl">
-        <p className="text-small m-5">Automating my front to self!</p>
+        <p className="text-small m-5 animate-pulse">Automating my front to self!</p>
       </section>
       <section>
         <h2>Blog</h2>
