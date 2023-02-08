@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import ThemeSwitcher from './theme-switch'
 import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
-import SocialFloater from './social-floater'
+import { SocialFloater } from './social-floater'
 
 const name = 'Áron Gida'
 export const siteTitle = 'Áron Gida'
@@ -20,6 +18,10 @@ export default function Layout({
   useEffect(() => {
     themeChange(false)
   }, [])
+
+  const copyEmailAddress = () => {
+    navigator.clipboard.writeText("gidaaron@gmail.com")
+  }
 
   return (
     <div>
@@ -39,50 +41,31 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div >
-        <div className="fixed top-0">
-          <ThemeSwitcher></ThemeSwitcher>
-        </div>
+
         <div className="fixed bottom-0 right-0">
-          <SocialFloater></SocialFloater>
+          <SocialFloater copyEmailAddress={copyEmailAddress}></SocialFloater>
         </div>
-        <header className='flex min-h-screen flex-col items-center justify-center py-2'>
-          {home ? (
-            <>
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className="rounded-3xl"
-                height={200}
-                width={200}
-                alt={name}
-              />
-              <h1 className="text-3xl text-center p-5 m-5">{name}</h1>
-            </>
-          ) : (
-            <>
-              <Link href="/">
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </Link>
-              <h2>
-                <Link href="/">
-                  {name}
-                </Link>
-              </h2>
-            </>
-          )}
-        </header>
-        <main>{children}</main>
-        {!home && (
-          <div>
-            <Link href="/" className="underline">← Back to home</Link>
+        <header className="fixed top-0 min-w-full z-10">
+          <div className="navbar text-neutral-content bg-neutral">
+            <div className="w-32 fixed left-0">
+              <ThemeSwitcher></ThemeSwitcher>
+            </div>
+            <div className="fixed right-0">
+              <ul className="w-64 flex flew-row-reverse">
+                <li className="flex-1 hover:animate-pulse">
+                  <a href="#home">Home</a>
+                </li>
+                <li className="flex-1 hover:animate-pulse">
+                  <a href="#experience">Home</a>
+                </li>
+                <li className="flex-1 hover:animate-pulse">
+                  <a href="#projects">Projects</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        )}
+        </header>
+        <main className="">{children}</main>
       </div>
     </div>
   )

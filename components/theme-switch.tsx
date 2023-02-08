@@ -12,9 +12,6 @@ export default function ThemeSwitcher() {
     setIsDarkDefault(getIsDarkDefault())
   }, [])
 
-
-
-
   return (
     <div className="m-5">
       <label className="swap swap-rotate">
