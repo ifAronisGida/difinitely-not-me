@@ -52,13 +52,13 @@ export default function Layout({
             </div>
             <div className="fixed right-0">
               <ul className="w-64 flex flew-row-reverse">
-                <li className="flex-1 hover:animate-pulse">
+                <li className="flex-auto hover:animate-pulse">
                   <a href="#home">Home</a>
                 </li>
-                <li className="flex-1 hover:animate-pulse">
+                <li className="flex-auto hover:animate-pulse">
                   <a href="#experience">Experience</a>
                 </li>
-                <li className="flex-1 hover:animate-pulse">
+                <li className="flex-auto hover:animate-pulse">
                   <a href="#projects">Projects</a>
                 </li>
               </ul>
