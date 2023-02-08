@@ -4,6 +4,7 @@ import Link from 'next/link'
 import ThemeSwitcher from './theme-switch'
 import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
+import SocialFloater from './social-floater'
 
 const name = 'Áron Gida'
 export const siteTitle = 'Áron Gida'
@@ -40,6 +41,9 @@ export default function Layout({
       <div >
         <div className="fixed top-0">
           <ThemeSwitcher></ThemeSwitcher>
+        </div>
+        <div className="fixed botton-0 right-0">
+          <SocialFloater></SocialFloater>
         </div>
         <header className='flex min-h-screen flex-col items-center justify-center py-2'>
           {home ? (
