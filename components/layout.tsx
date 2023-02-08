@@ -56,7 +56,7 @@ export default function Layout({
                   <a href="#home">Home</a>
                 </li>
                 <li className="flex-1 hover:animate-pulse">
-                  <a href="#experience">Home</a>
+                  <a href="#experience">Experience</a>
                 </li>
                 <li className="flex-1 hover:animate-pulse">
                   <a href="#projects">Projects</a>
