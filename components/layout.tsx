@@ -42,7 +42,7 @@ export default function Layout({
         <div className="fixed top-0">
           <ThemeSwitcher></ThemeSwitcher>
         </div>
-        <div className="fixed botton-0 right-0">
+        <div className="fixed bottom-0 right-0">
           <SocialFloater></SocialFloater>
         </div>
         <header className='flex min-h-screen flex-col items-center justify-center py-2'>
