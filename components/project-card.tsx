@@ -14,8 +14,7 @@ export const ProjectCard: React.FC<Props> = ({ projectData }) => {
 
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-      <figure className="mt-5"><img src="./images/profile.jpg" height={100} width={150} alt="Shoes" /></figure>
+    <div className="m-5 card w-96 bg-base-100 shadow-xl">
       <div className="card-body">
         <h2 className="card-title">
           {projectData.title}

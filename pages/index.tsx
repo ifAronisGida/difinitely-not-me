@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { title } from 'process'
 import { Experiences } from '../components/experience'
 import Layout, { siteTitle } from '../components/layout'
 import { ProjectCard } from '../components/project-card'
@@ -23,13 +22,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="experience">
-        <div className="hero min-h-screen">
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-md">
+      <section id="experience" className="text-xl">
+        <div className="hero min-h-screen bg-base-100">
+          <div className="hero-content text-center">
+            <div className="max-w-xl">
               <h1 className="mb-5 text-5xl font-bold">Experiences:</h1>
-              <Experiences />
+              <div className="grid grid-flow-row">
+                <Experiences />
+              </div>
             </div>
           </div>
         </div>
@@ -37,9 +37,9 @@ export default function Home() {
       <section id="projects" className="text-xl">
         <div className="hero min-h-screen bg-base-200">
           <div className="hero-content text-center">
-            <div className="max-w-md">
-              <h1 className="text-5xl font-bold">Projects:</h1>
-              <div className="grid gap-4">
+            <div className="max-w-xl">
+              <h1 className="text-5xl font-bold mb-5">Projects:</h1>
+              <div className="grid grid-flow-row auto-rows-auto">
                 <ProjectCard projectData={{ title: "GlumeoCraft", text: "Unity 3D project", tags: ["Unity", "C#"], status: "In development.." }}></ProjectCard>
                 <ProjectCard projectData={{ title: "gidaron.com", text: "Portfolio site", tags: ["React", "TypeScript", "Tailwind"], status: "In development.." }}></ProjectCard>
                 <ProjectCard projectData={{ title: "ZeroWaste", text: "Zero waste marketplace", tags: ["React", "MongoDB", "ExpressJS", "NodeJS"], status: "Planning.." }}></ProjectCard>
