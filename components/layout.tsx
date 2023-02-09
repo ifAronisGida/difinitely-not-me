@@ -45,6 +45,7 @@ export default function Layout({
         <div className="fixed bottom-0 right-0">
           <SocialFloater copyEmailAddress={copyEmailAddress}></SocialFloater>
         </div>
+
         <header className="fixed top-0 min-w-full z-10">
           <div className="navbar text-neutral-content bg-neutral">
             <div className="w-32 fixed left-0">

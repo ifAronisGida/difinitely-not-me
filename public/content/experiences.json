@@ -1,0 +1,54 @@
+[
+  {
+    "title": "CodeCool",
+    "year": "2018-2019",
+    "description": "Started my tech career here with a one-year long fullstack course, learned the basics of programming..",
+    "hardskills": [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "OOP with Java",
+      "Test automation with Selenium"
+    ],
+    "softskills": [
+      "teamwork",
+      "agile",
+      "demo"
+    ]
+  },
+  {
+    "title": "Mortoff Kft",
+    "year": "2019-2022",
+    "description": "I worked as an automation developer using mainly low-code tools and some other technologies as well..",
+    "hardskills": [
+      "UiPath",
+      "JavaScript",
+      "SQL",
+      "VBA",
+      "C#",
+      "VBScript"
+    ],
+    "softskills": [
+      "client communication",
+      "business analysis",
+      "ownership"
+    ]
+  },
+  {
+    "title": "Robert Bosch Kft",
+    "year": "2022-",
+    "description": "I work here currently as an automation developer using mainly low-code tools and some other technologies as well..",
+    "hardskills": [
+      "AA360",
+      "JavaScript",
+      "SQL",
+      "GuiXT",
+      "SAP"
+    ],
+    "softskills": [
+      "communication with foreign colleagues",
+      "documentation"
+    ]
+  }
+]
