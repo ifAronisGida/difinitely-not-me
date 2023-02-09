@@ -1,0 +1,47 @@
+[
+  {
+    "title": "GlumeoCraft",
+    "text": "Unity 2D digital boardgame",
+    "tags": [
+      "Unity",
+      "C#"
+    ],
+    "status": "In development..",
+    "repoLink": "https://github.com/glumeocraft/unity-sandbox"
+  },
+  {
+    "title": "gidaron.com",
+    "text": "Portfolio site hosted on Vercel",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "NextJS"
+    ],
+    "status": "In development..",
+    "repoLink": "https://github.com/ifAronisGida/difinitely-not-me"
+  },
+  {
+    "title": "ZeroWaste",
+    "text": "Zero waste marketplace",
+    "tags": [
+      "React",
+      "MongoDB",
+      "ExpressJS",
+      "NodeJS"
+    ],
+    "status": "Planning..",
+    "repoLink": ""
+  },
+  {
+    "title": "Raft game",
+    "text": "University project, written in java. The code is documented in javadoc style and includes unit tests.",
+    "tags": [
+      "JavaFX",
+      "JUnit",
+      "javadoc"
+    ],
+    "status": "Done",
+    "repoLink": "https://github.com/ifAronisGida/raft-game"
+  }
+]

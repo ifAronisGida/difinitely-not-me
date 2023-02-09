@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Experiences } from '../components/experience'
 import Layout, { siteTitle } from '../components/layout'
-import { ProjectCard } from '../components/project-card'
+import { Projects } from '../components/projects'
 
 
 export default function Home() {
@@ -40,9 +40,7 @@ export default function Home() {
             <div className="max-w-xl">
               <h1 className="text-5xl font-bold mb-5">Projects:</h1>
               <div className="grid grid-flow-row auto-rows-auto">
-                <ProjectCard projectData={{ title: "GlumeoCraft", text: "Unity 3D project", tags: ["Unity", "C#"], status: "In development.." }}></ProjectCard>
-                <ProjectCard projectData={{ title: "gidaron.com", text: "Portfolio site", tags: ["React", "TypeScript", "Tailwind"], status: "In development.." }}></ProjectCard>
-                <ProjectCard projectData={{ title: "ZeroWaste", text: "Zero waste marketplace", tags: ["React", "MongoDB", "ExpressJS", "NodeJS"], status: "Planning.." }}></ProjectCard>
+                <Projects />
               </div>
             </div>
           </div>
