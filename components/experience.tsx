@@ -7,7 +7,7 @@ export const Experiences: React.FC<Props> = () => {
   return (
     <>
       {experiences.map((experience) =>
-        <div className="card w-96 bg-base-100 shadow-xl m-5">
+        <div className="bg-base-100 shadow-xl">
           <div className="card-body">
 
 

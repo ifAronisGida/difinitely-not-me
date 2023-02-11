@@ -9,8 +9,9 @@ export const Projects: React.FC<Props> = () => {
   return (
     <>
       {projects.map((project) =>
-        <a href={project.repoLink} target="_blank" rel="noreferrer">
-          <div className="m-5 card w-96 bg-base-100 shadow-xl">
+
+        <div className="bg-base-100 hover:bg-base-200 shadow-xl">
+          <a href={project.repoLink} target="_blank" rel="noreferrer">
             <div className="card-body">
               <h2 className="card-title relative">
                 {project.title}
@@ -21,9 +22,11 @@ export const Projects: React.FC<Props> = () => {
                 {project.tags.map((tag) => <div className="badge badge-outline">{tag}</div>)}
               </div>
             </div>
-          </div>
-        </a>
-      )}
+          </a>
+        </div>
+
+      )
+      }
     </>
 
   )

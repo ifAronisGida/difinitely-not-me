@@ -6,7 +6,7 @@
       "Unity",
       "C#"
     ],
-    "status": "In development..",
+    "status": "Development",
     "repoLink": "https://github.com/glumeocraft/unity-sandbox"
   },
   {
@@ -18,7 +18,7 @@
       "Tailwind",
       "NextJS"
     ],
-    "status": "In development..",
+    "status": "Development",
     "repoLink": "https://github.com/ifAronisGida/difinitely-not-me"
   },
   {
@@ -26,11 +26,11 @@
     "text": "Zero waste marketplace",
     "tags": [
       "React",
-      "MongoDB",
-      "ExpressJS",
+      "GraphQL",
+      "Apollo",
       "NodeJS"
     ],
-    "status": "Planning..",
+    "status": "Planning",
     "repoLink": ""
   },
   {

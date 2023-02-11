@@ -42,7 +42,7 @@ export default function Layout({
       </Head>
       <div >
 
-        <div className="fixed bottom-0 right-0">
+        <div className="fixed bottom-0 right-0  z-10">
           <SocialFloater copyEmailAddress={copyEmailAddress}></SocialFloater>
         </div>
 
@@ -52,14 +52,14 @@ export default function Layout({
               <ThemeSwitcher></ThemeSwitcher>
             </div>
             <div className="fixed right-0">
-              <ul className="w-64 flex flew-row-reverse">
-                <li className="flex-auto hover:animate-pulse">
+              <ul className="w-64 flex flex-row-reverse">
+                <li className="flex-auto hover:text-secondary hover:animate-pulse">
                   <a href="#home">Home</a>
                 </li>
-                <li className="flex-auto hover:animate-pulse">
+                <li className="flex-auto hover:text-secondary hover:animate-pulse">
                   <a href="#experience">Experience</a>
                 </li>
-                <li className="flex-auto hover:animate-pulse">
+                <li className="flex-auto hover:text-secondary hover:animate-pulse">
                   <a href="#projects">Projects</a>
                 </li>
               </ul>
