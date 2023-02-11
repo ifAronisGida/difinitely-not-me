@@ -24,8 +24,8 @@ export default function Home() {
       </section>
       <section id="experience" className="text-xl">
         <div className="hero min-h-screen bg-base-100">
-          <div className="min-w-max text-center">
-            <div className="max-w-xl xl:max-w-xl">
+          <div className="text-center">
+            <div className="max-w-xl xl:max-w-6xl">
               <h1 className="mb-5 text-5xl font-bold">Experiences:</h1>
               <div className="grid gap-4 grid-cols-1 xl:grid-cols-3">
                 <Experiences />
