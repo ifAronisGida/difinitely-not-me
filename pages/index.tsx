@@ -10,9 +10,9 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section id="home" className="text-xl">
-        <div className="hero min-h-screen bg-base-200">
-          <div className="hero-content text-center">
+      <section id="home" className="text-xl content-center">
+        <div className="place-items-center min-h-screen bg-base-200 grid grid-cols-1">
+          <div className="text-center min-w-max">
             <div className="max-w-md">
               <h1 className="text-xl font-thin">Hello there!</h1>
               <h1 className="text-5xl font-bold">My name is Áron</h1>
@@ -25,7 +25,7 @@ export default function Home() {
       <section id="experience" className="text-xl">
         <div className="hero min-h-screen bg-base-100">
           <div className="min-w-max text-center">
-            <div className="max-w-xl xl:max-w-5xl">
+            <div className="max-w-xl xl:max-w-xl">
               <h1 className="mb-5 text-5xl font-bold">Experiences:</h1>
               <div className="grid gap-4 grid-cols-1 xl:grid-cols-3">
                 <Experiences />

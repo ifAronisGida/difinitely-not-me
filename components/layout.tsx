@@ -39,6 +39,7 @@ export default function Layout({
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div >
 
@@ -66,7 +67,7 @@ export default function Layout({
             </div>
           </div>
         </header>
-        <main className="">{children}</main>
+        <main className="min-w-max">{children}</main>
       </div>
     </div>
   )

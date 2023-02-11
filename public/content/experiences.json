@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "CodeCool",
     "year": "2018-2019",
     "description": "Started my tech career here with a one-year long fullstack course, learned the basics of programming..",
@@ -18,6 +19,7 @@
     ]
   },
   {
+    "id": 2,
     "title": "Mortoff Kft",
     "year": "2019-2022",
     "description": "I worked as an automation developer using mainly low-code tools and some other technologies as well..",
@@ -36,6 +38,7 @@
     ]
   },
   {
+    "id": 3,
     "title": "Robert Bosch Kft",
     "year": "2022-",
     "description": "I work here currently as an automation developer using mainly low-code tools and some other technologies as well..",
