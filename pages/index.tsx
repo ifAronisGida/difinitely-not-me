@@ -2,16 +2,25 @@ import Head from 'next/head'
 import { Experiences } from '../components/experience'
 import Layout, { siteTitle } from '../components/layout'
 import { Projects } from '../components/projects'
+import AnimatedBackground from '../components/AnimatedBackground';
+
 
 
 export default function Home() {
+
+
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <div id="animated-bg" className="fixed min-h-screen min-w-full -z-10">
+        <AnimatedBackground />
+      </div>
+
       <section id="home" className="text-xl content-center">
-        <div className="place-items-center min-h-screen bg-base-200 grid grid-cols-1">
+
+        <div className="place-items-center min-h-screen grid grid-cols-1">
           <div className="text-center min-w-max">
             <div className="max-w-md">
               <h1 className="text-xl font-thin">Hello there!</h1>
@@ -23,7 +32,7 @@ export default function Home() {
         </div>
       </section>
       <section id="experience" className="text-xl">
-        <div className="hero min-h-screen bg-base-100">
+        <div className="hero min-h-screen">
           <div className="text-center">
             <div className="max-w-xl xl:max-w-6xl">
               <h1 className="mb-5 text-5xl font-bold">Experiences:</h1>
@@ -35,7 +44,7 @@ export default function Home() {
         </div>
       </section>
       <section id="projects" className="text-xl">
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen">
           <div className="min-w-max text-center">
             <div className="max-w-xl">
               <h1 className="text-5xl font-bold mb-5">Projects:</h1>
@@ -47,5 +56,5 @@ export default function Home() {
         </div>
       </section>
     </Layout>
-  )
+  );
 }
