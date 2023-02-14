@@ -65,7 +65,7 @@ export default function Layout({
             </div>
           </div>
         </header>
-        <main className="min-w-max">{children}</main>
+        <main className="w-screen content-center">{children}</main>
       </div>
     </div>
   )

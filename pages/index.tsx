@@ -18,20 +18,20 @@ export default function Home() {
         <AnimatedBackground />
       </div>
 
-      <section id="home" className="text-xl content-center">
+      <section id="home" className="sm:text-xl content-center">
 
         <div className="place-items-center min-h-screen grid grid-cols-1">
           <div className="text-center min-w-max">
             <div className="max-w-md">
-              <h1 className="text-sm sm:text-xl font-thin">Hello there!</h1>
-              <h1 className="text-2xl sm:text-5xl font-bold">My name is Áron</h1>
+              <h1 className="text-xs sm:text-xl font-thin">Hello there!</h1>
+              <h1 className="text-sm sm:text-5xl font-bold">My name is Áron</h1>
               <p className="py-6">I am motivated by creating useful and nice things. I automate processes as a profession and build software in my free time with passion.</p>
               <h1 className="text-sm sm:text-xl font-thin text-red-500">Please consider this site is under development, you might find inappropriate content and/or bugs during browsing!</h1>
             </div>
           </div>
         </div>
       </section>
-      <section id="experience" className="text-xl">
+      <section id="experience" className="sm:text-xl">
         <div className="hero min-h-screen">
           <div className="text-center">
             <div className="max-w-xl xl:max-w-6xl">
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projects" className="text-xl">
+      <section id="projects" className="sm:text-xl">
         <div className="hero min-h-screen">
           <div className="min-w-max text-center">
             <div className="max-w-xl">
