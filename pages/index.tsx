@@ -10,7 +10,7 @@ export default function Home() {
 
 
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -23,10 +23,10 @@ export default function Home() {
         <div className="place-items-center min-h-screen grid grid-cols-1">
           <div className="text-center min-w-max">
             <div className="max-w-md">
-              <h1 className="text-xl font-thin">Hello there!</h1>
-              <h1 className="text-5xl font-bold">My name is Áron</h1>
+              <h1 className="text-sm sm:text-xl font-thin">Hello there!</h1>
+              <h1 className="text-2xl sm:text-5xl font-bold">My name is Áron</h1>
               <p className="py-6">I am motivated by creating useful and nice things. I automate processes as a profession and build software in my free time with passion.</p>
-              <h1 className="text-xl font-thin text-red-500">Please consider this site is under development, you might find inappropriate content and/or bugs during browsing!</h1>
+              <h1 className="text-sm sm:text-xl font-thin text-red-500">Please consider this site is under development, you might find inappropriate content and/or bugs during browsing!</h1>
             </div>
           </div>
         </div>

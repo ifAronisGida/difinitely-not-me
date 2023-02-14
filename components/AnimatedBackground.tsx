@@ -17,7 +17,6 @@ export default function AnimatedBackground() {
 
   return (
     <Particles
-      className="text-primary"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

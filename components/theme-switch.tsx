@@ -8,7 +8,7 @@ export default function ThemeSwitcher() {
 
   //get system default once
   useEffect(() => {
-    console.log(getIsDarkDefault())
+    console.log("System set to prefer dark theme: " + getIsDarkDefault())
     setIsDarkDefault(getIsDarkDefault())
   }, [])
 

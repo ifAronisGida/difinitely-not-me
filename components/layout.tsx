@@ -9,10 +9,8 @@ export const siteTitle = 'Áron Gida'
 
 export default function Layout({
   children,
-  home
 }: {
   children: React.ReactNode
-  home?: boolean
 }) {
 
   useEffect(() => {
