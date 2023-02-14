@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
@@ -17,14 +17,14 @@ export default function AnimatedBackground() {
 
   return (
     <Particles
-      className="opacity-30"
+      className="text-primary"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
         background: {
           color: {
-            value: "#0d47a1",
+            value: "",
           },
         },
         fpsLimit: 120,
@@ -36,7 +36,7 @@ export default function AnimatedBackground() {
             },
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: "trail",
             },
             resize: true,
           },
@@ -45,18 +45,18 @@ export default function AnimatedBackground() {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#000000",
           },
           links: {
-            color: "#ffffff",
-            distance: 150,
+            color: "#000000",
+            distance: 200,
             enable: true,
             opacity: 0.5,
             width: 1,
@@ -65,7 +65,7 @@ export default function AnimatedBackground() {
             enable: true,
           },
           move: {
-            direction: "none",
+            direction: "outside",
             enable: true,
             outModes: {
               default: "bounce",
@@ -77,7 +77,7 @@ export default function AnimatedBackground() {
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 1200,
             },
             value: 80,
           },
@@ -88,7 +88,7 @@ export default function AnimatedBackground() {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 4 },
           },
         },
         detectRetina: true,
