@@ -8,7 +8,8 @@
       "C#"
     ],
     "status": "Development",
-    "repoLink": "https://github.com/glumeocraft/unity-sandbox"
+    "repoLink": "https://github.com/glumeocraft/unity-sandbox",
+    "demoLink": "/glumeo"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
       "NextJS"
     ],
     "status": "Development",
-    "repoLink": "https://github.com/ifAronisGida/difinitely-not-me"
+    "repoLink": "https://github.com/ifAronisGida/difinitely-not-me",
+    "demoLink": "/"
   },
   {
     "id": 3,
@@ -34,7 +36,8 @@
       "NodeJS"
     ],
     "status": "Planning",
-    "repoLink": ""
+    "repoLink": "",
+    "demoLink": ""
   },
   {
     "id": 4,
@@ -46,6 +49,7 @@
       "javadoc"
     ],
     "status": "Done",
-    "repoLink": "https://github.com/ifAronisGida/raft-game"
+    "repoLink": "https://github.com/ifAronisGida/raft-game",
+    "demoLink": ""
   }
 ]

@@ -46,7 +46,7 @@ export default function Home() {
       <section id="projects" className="text-sm sm:text-xl content-center">
         <div className="min-h-screen place-items-center grid grid-cols-1">
           <div className="min-w-max text-center">
-            <div className="max-w-xs sm:max-w-xl">
+            <div className="max-w-xs sm:max-w-4xl">
               <h1 className="text-5xl font-bold mb-5">Projects:</h1>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <Projects />
