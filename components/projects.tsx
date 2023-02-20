@@ -4,7 +4,7 @@ import projects from "../public/content/projects.json"
 interface Props {
 }
 
-interface Project {
+type Project = {
   "id": number,
   "title": string,
   "text": string,
