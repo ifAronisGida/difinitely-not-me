@@ -10,14 +10,15 @@ export default function Glumeo() {
   });
 
   return (
-    <Fragment>
+    <>
       {!isLoaded && (
         <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
       )}
-      <Unity className="min-w-full min-h-screen"
+      <Unity
+        className="min-w-full min-h-screen"
         unityProvider={unityProvider}
         style={{ visibility: isLoaded ? "visible" : "hidden" }}
       />
-    </Fragment>
+    </>
   );
 }
