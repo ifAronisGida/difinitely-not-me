@@ -36,8 +36,8 @@ export const Projects: React.FC<Props> = () => {
               <div className="badge badge-outline right-0">{project.status}</div>
             </h2>
             <div className="">{project.text}</div>
-            {project.demoLink !== "" && <div className="badge badge-secondary"><a href={project.demoLink}>Demo</a></div>}
-            {project.repoLink !== "" && <div className="badge badge-secondary"><a href={project.repoLink}>GitHub</a></div>}
+            {project.demoLink !== "" && <div className="badge badge-secondary"><a href={project.demoLink} target="_blank" rel="noreferrer">Demo</a></div>}
+            {project.repoLink !== "" && <div className="badge badge-secondary"><a href={project.repoLink} target="_blank" rel="noreferrer">GitHub</a></div>}
 
             <div className="card-actions justify-end">
               {project.tags.map((tag) => <div key={count++} className="badge badge-outline">{tag}</div>)}

@@ -5,7 +5,7 @@ import { useTheme } from "../contexts/ThemeContext";
 
 export default function AnimatedBackground() {
 
-  const {theme} = useTheme();
+  const { theme } = useTheme();
 
   const particlesInit = useCallback(async (engine) => {
     //console.log(engine);
@@ -35,11 +35,11 @@ export default function AnimatedBackground() {
           events: {
             onClick: {
               enable: true,
-              mode: "push",
+              mode: "bubble",
             },
             onHover: {
               enable: true,
-              mode: "trail",
+              mode: "slow",
             },
             resize: true,
           },
@@ -55,11 +55,11 @@ export default function AnimatedBackground() {
         },
         particles: {
           color: {
-            value: theme === "dark" ? "#ffffff": "#000000",
+            value: theme === "dark" ? "#ffffff" : "#000000",
           },
           links: {
-            color: theme === "dark" ? "#ffffff": "#000000",
-            distance: 200,
+            color: theme === "dark" ? "#ffffff" : "#000000",
+            distance: 250,
             enable: true,
             opacity: 0.5,
             width: 1,
@@ -74,7 +74,7 @@ export default function AnimatedBackground() {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 2,
             straight: false,
           },
           number: {
@@ -82,7 +82,7 @@ export default function AnimatedBackground() {
               enable: true,
               area: 1200,
             },
-            value: 80,
+            value: 50,
           },
           opacity: {
             value: 0.5,
@@ -91,7 +91,7 @@ export default function AnimatedBackground() {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 4 },
+            value: { min: 0.5, max: 2 },
           },
         },
         detectRetina: true,
