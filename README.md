@@ -21,7 +21,11 @@
 - Dark / Light Mode (even for the animated background)
 - embedded unity project
 
-## Planning to do
+### Backlog
 
 - Use some kind of headless cms to get the content
 - Add more projects with live previews
+- Slow animation down (should not speed up over time)
+- Open demos and links on new tab
+- Add new section for technologies I am interested in
+- Animate transitions of sections
