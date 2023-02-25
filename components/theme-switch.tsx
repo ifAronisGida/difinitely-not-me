@@ -4,15 +4,17 @@ import { useTheme } from "../contexts/ThemeContext";
 
 export default function ThemeSwitcher() {
 
-  const {theme, setDark, setLight, toggle} = useTheme();
+  const { theme, setDark, setLight, toggle } = useTheme();
   const [isDarkDefault, setIsDarkDefault] = useState(false);
 
   //get system default once and set theme context, need to rerun when state changes to set themecontext as well
   useEffect(() => {
     let darkDefault = window.matchMedia("(prefers-color-scheme: dark)").matches;
     console.log("System set to prefer dark theme: " + darkDefault);
-    if ( darkDefault ) setDark();
-    else setLight();
+    let themeFromLocalStorage = localStorage.getItem("theme");
+    if (darkDefault || themeFromLocalStorage === "dark") setDark();
+    if (themeFromLocalStorage === "light") setLight();
+
     console.log(theme);
     setIsDarkDefault(darkDefault);
 
